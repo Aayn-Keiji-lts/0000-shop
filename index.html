@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>00:00 O'clock | Catalógo</title>
+    
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <img src="Imagenes/0000 Logo.png" alt="Logo" class="main-logo">
+        <h1>00:00 O'clock</h1>
+        <p class="tagline">✨ De fans para fans ✨</p>
+        <div class="header-nav">
+            <a href="#productos">Productos</a>
+            <a href="#paquetes" class="btn-anchor">Ver Ofertas 🎁</a>
+        </div>
+    </header>
+
+    <section class="about-section">
+    <div class="about-container">
+        <div class="about-text">
+            <span class="welcome-tag">¡Hola! Soy Aayn ✨</span>
+            <h2>Creatividad digital hecha papelería</h2>
+            <p>
+                Bienvenida a mi pequeño estudio. Aquí fusiono mi pasión por la <b>programación</b> y el <b>diseño</b> para crear piezas únicas que celebran tus historias y artistas favoritos.
+            </p>
+            <p>
+                Cada producto está diseñado con atención al detalle, buscando esa estética <i>soft</i> que hace especial tu colección. ¡Gracias por apoyar este proyecto independiente!
+            </p>
+            <div class="about-badges">
+                <span>👩‍💻 Coded with love</span>
+                <span>🇲🇽 Envíos desde México</span>
+            </div>
+        </div>
+        <div class="about-visual">
+            <div class="visual-card">
+                <img src="img/setup-procreate.jpg" alt="Mi proceso creativo" class="setup-img">
+                <div class="floating-sticker">Artist Mode</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <main class="product-grid" id="productos">
+        
+        <section class="card">
+            <img src="Imagenes/photocards.jpeg" alt="Photocards" class="card-img">
+            <div class="package-badges"><span>5 pcs</span><span>10 pcs</span><span>15 pcs</span></div>
+            <h2>K-pop Photocards</h2>
+            
+            <div class="selector-group">
+                <label for="pc-qty">Cantidad:</label>
+                <select id="pc-qty" onchange="updatePCPrice()">
+                    <option value="75">5 piezas</option>
+                    <option value="135">10 piezas</option>
+                    <option value="185">15 piezas</option>
+                </select>
+
+                <label for="pc-type">Acabado:</label>
+                <select id="pc-type" onchange="updatePCPrice()">
+                    <option value="0">Estándar</option>
+                    <option value="15">PVC</option>
+                </select>
+
+                <div class="price-tag" id="pc-price">$75 MXN</div>
+            </div>
+            
+            <a href="#" class="btn-primary">Ver en Etsy</a>
+        </section>
+
+        <section class="card">
+            <img src="Imagenes/separadores.jpeg" alt="Separadores" class="card-img">
+            <div class="package-badges"><span>2 pcs</span><span>7 pcs</span><span>13 pcs</span></div>
+            <h2>Separadores</h2>
+            <div class="selector-group">
+                <select id="book-qty" onchange="updatePrice('book')">
+                    <option value="65">2 piezas</option>
+                    <option value="124">7 piezas</option>
+                    <option value="195">13 piezas</option>
+                </select>
+                <div class="price-tag" id="book-price">$65 MXN</div>
+            </div>
+            <a href="#" class="btn-primary">Ver en Etsy</a>
+        </section>
+
+        <section class="card">
+            <img src="Imagenes/mousepads.jpeg" alt="Mousepads" class="card-img">
+            <h2>Mousepads</h2>
+            <p class="desc-short">Diseños 300 DPI para tu setup.</p>
+            <div class="price-tag">$185 MXN</div>
+            <a href="#" class="btn-primary">Ver en Etsy</a>
+        </section>
+
+        <section class="card">
+            <img src="Imagenes/libretas.jpeg" alt="Mousepads" class="card-img">
+            <h2>Libretas</h2>
+            <p class="desc-short">Estudia con tus favoritos.</p>
+            <div class="price-tag">$185 MXN</div>
+            <a href="#" class="btn-primary">Ver en Etsy</a>
+        </section>
+
+        <section class="card">
+            <img src="Imagenes/libretas.jpeg" alt="Mousepads" class="card-img">
+            <h2>Tazas</h2>
+            <p class="desc-short">Estudia con tus favoritos.</p>
+            <div class="price-tag">$185 MXN</div>
+            <a href="#" class="btn-primary">Ver en Etsy</a>
+        </section>
+
+    </main>
+
+    <section class="bundles-section" id="paquetes">
+    <div class="section-intro">
+        <h2>Kits Especiales ✨</h2>
+        <p>Tus productos favoritos combinados con un precio mejorado</p>
+    </div>
+
+    <div class="bundles-container">
+        
+        <article class="bundle-card">
+            <div class="bundle-badge">Ahorro</div>
+            <img src="Imagenes/libretas.jpeg" alt="Kit Kpop" class="bundle-img">
+            <div class="bundle-info">
+                <h3>Bias Starter Kit</h3>
+                <ul>
+                    <li>✨ 10 Photocards</li>
+                    <li>📖 1 Separador</li>
+                </ul>
+                <div class="bundle-price">
+                    <span class="old-price">$220</span>
+                    <span class="new-price">$185 MXN</span>
+                </div>
+                <a href="#" class="btn-bundle">Ver en Etsy</a>
+            </div>
+        </article>
+
+        <article class="bundle-card">
+            <div class="bundle-badge">Popular</div>
+            <img src="Imagenes/libretas.jpeg" alt="Kit Libros" class="bundle-img">
+            <div class="bundle-info">
+                <h3>Reader Pack</h3>
+                <ul>
+                    <li>📖 5 Separadores</li>
+                    <li>☕ 1 Taza</li>
+                </ul>
+                <div class="bundle-price">
+                    <span class="old-price">$310</span>
+                    <span class="new-price">$275 MXN</span>
+                </div>
+                <a href="#" class="btn-bundle">Ver en Etsy</a>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+    <footer>
+        <p>Hecho con ♡ por Aayn Keiji</p>
+        <p class="dev-tag">&lt; Coded by a Gamer Fan /&gt;</p>
+    </footer>
+
+    <script>
+        // Función para actualizar precios dinámicamente
+        function updatePrice(type) {
+            const select = document.getElementById(type + '-qty');
+            const priceDisplay = document.getElementById(type + '-price');
+            priceDisplay.innerText = '$' + select.value + ' MXN';
+        }
+    </script>
+
+    <script>
+        // 1. Función para productos simples (Separadores)
+        function updatePrice(type) {
+            const select = document.getElementById(type + '-qty');
+            const priceDisplay = document.getElementById(type + '-price');
+            if(select && priceDisplay) {
+                priceDisplay.innerText = '$' + select.value + ' MXN';
+            }
+        }
+
+        // 2. Función especial para Photocards (Suma Cantidad + Acabado)
+        function updatePCPrice() {
+            const qtySelect = document.getElementById('pc-qty');
+            const typeSelect = document.getElementById('pc-type');
+            const priceDisplay = document.getElementById('pc-price');
+
+            if (qtySelect && typeSelect && priceDisplay) {
+                const base = parseInt(qtySelect.value);
+                const extra = parseInt(typeSelect.value);
+                const total = base + extra;
+                priceDisplay.innerText = '$' + total + ' MXN';
+                console.log("Precio PC actualizado: " + total);
+            }
+        }
+
+        // 3. Ejecutar al cargar la página para que los precios no salgan en $0 o vacíos
+        window.onload = function() {
+            updatePCPrice();
+            // Si tienes más funciones de inicio, agrégalas aquí
+        };
+    </script>
+
+</body>
+</html>
